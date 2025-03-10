@@ -45,7 +45,21 @@ axis = 0 -- (row)
 
 18. newdf.drop(['A','D'], axis = 1) -- It will drop A and D column but original dataframe will b same as it is return the copy of dataset
 
-19.  newdf.drop(['A','D'], axis = 1, inplace = True) -- it will modify original table. 
+19.  newdf.drop(['A','D'], axis = 1, inplace = True) -- it will modify original table.
+
+20.  newdf.reset_index() -- It will reset index start from 0 but it will add column as Index 
+
+21.  newdf.reset_index(drop = true) -- it will drop 1st column name as index
+
+22.  newdf.dropna(inplace = True) -- It will drop null values
+
+23.  df.dropna(how = 'all',axis = 1) -- it will delete wholw column  as all rows having NaN values
+
+24.  df.drop_duplicates(subset = ['name']) -- remove duplicate value
+
+25.  df['name'].value_counts(dropna=False) -- it will give the count of values and it not delete na values as well
+
+26.  
 
 
 
